@@ -8,8 +8,6 @@ Due to cosmic radiation, some of the “SOS” messages were altered during tran
 The goal of the function is to determine how many letters were altered during transmission.
 
 Exemple: for the input SOFS OSS ISSOW the function will return 3
-*/
-
 
 function Marsos (str) {
 
@@ -27,4 +25,23 @@ function Marsos (str) {
     return count
 }
 const count= Marsos("SOFSOSSISSOW")
+console.log(count)
+
+
+
+ CORRECTION*/
+function Marsos(str) {
+    const sosCount = str.length / 3
+    const messages = "SOS".repeat(sosCount)
+  
+    let errorCount = 0
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] !== messages[i]) {
+        errorCount++
+      }
+    }
+  
+    return errorCount
+  }
+  const count= Marsos("SOFSOSSISSOW")
 console.log(count)
