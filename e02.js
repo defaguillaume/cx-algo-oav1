@@ -31,6 +31,6 @@ function isPangram (Str) {
     return console.log('Hello Efrei')
 
 }
-const count= isPangram("The quwn fox jumps over the lazy dog")
+const count= isPangram("The quick brown fox jumps over the lazy dog")
 
 
