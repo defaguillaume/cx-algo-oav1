@@ -24,13 +24,13 @@ function isPangram (Str) {
       const loweredSentence = Str.toLowerCase(i)
   
       if (!loweredSentence.includes(alphabet[i])) {
-       return false
+       return console.log(false)
       }
     }
   
     return console.log('Hello Efrei')
 
 }
-const count= isPangram("The quick brown fox jumps over the lazy dog")
+const count= isPangram("The quwn fox jumps over the lazy dog")
 
 
